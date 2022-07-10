@@ -1,0 +1,116 @@
+@import url('../css/reset.css');
+
+.nav-bar{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 120px;
+    width: 100%;
+    background-image: linear-gradient(to top , var(--mainColor), var(--subColor));
+    box-shadow: var(--shadowDefault);
+}
+
+.container-logo{
+    height: 100px;
+    width: 100px;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.container-logo:hover{
+    transform: scale(1.2);
+}
+
+.container-logo .logo{
+    width: 100%;
+}
+
+.menu-list{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.link-item{
+    color: var(--accentColor);
+    font-family: var(--font-titles);
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.container-icon-and-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: 0.8s;
+    border: 3px solid transparent;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.container-icon-and-link:hover{
+    border: 3px solid var(--accentColor);
+}
+
+.item-submenu{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.submenu-dropdown{
+    visibility: hidden;
+    background-color: var(--accentColor);
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border: 3px solid var(--mainColor);
+    box-shadow: var(--shadowDefault);
+    position: absolute;
+    top: 55px;
+    width: 200px;
+}
+
+.submenu-item{
+    transition: 0.8s;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.8s;
+    border-radius: 15px;
+    border: 3px solid transparent;
+    padding: 5px;
+}
+
+.submenu-item:hover{
+    border: 3px solid var(--mainColor);
+}
+
+.link-item-submenu{
+    color: var(--mainColor);
+    font-family: var(--font-titles);
+    font-size: 1.2em;
+    border-radius: 15px;
+}
+
+.item-menu{
+    transition: 0.8s;
+    cursor: pointer;
+    border: 3px solid transparent;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.item-menu:hover{
+    border: 3px solid var(--accentColor);
+}
+
+
+
