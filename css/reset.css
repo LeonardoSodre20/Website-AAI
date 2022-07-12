@@ -26,5 +26,6 @@ nav, ul ,ol, li , a{
     --accentColor: #FFCC32;
     --mainColor: #D71525;
     --subColor: #81101B;
+    --complementaryColor: #FFF48E;
     --shadowDefault: 0 0 20px rgba(0,0,0,0.5);
 }
