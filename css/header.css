@@ -4,7 +4,7 @@
 /*Estilização da Barra de Navegação*/
 
 .nav-bar{
-    position: fixed;
+    /* position: fixed; */
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -67,6 +67,11 @@
     align-items: center;
 }
 
+.item-submenu:hover .submenu-dropdown{
+    visibility: visible;
+    opacity: 1;
+}
+
 .submenu-dropdown{
     visibility: hidden;
     background-color: var(--accentColor);
@@ -81,11 +86,11 @@
     box-shadow: var(--shadowDefault);
     position: absolute;
     top: 55px;
+    left: -10px;
     width: 200px;
-}
-
-.item-submenu:hover .submenu-dropdown{
-    visibility: visible;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 1000;
 }
 
 .submenu-item{
@@ -124,6 +129,5 @@
 
 
 /*Estilização do Header*/
-
 
 
