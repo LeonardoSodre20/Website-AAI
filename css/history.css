@@ -1,0 +1,71 @@
+@import url('../css/reset.css');
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title-main{
+    margin-top: 20px;
+    color: var(--mainColor);
+    font-family: var(--font-titles);
+    font-size: 5em;
+}
+
+.container-video-history{
+    margin: 30px 0;
+    width: 800px;
+    border-radius: 15px;
+    background-color: var(--mainColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: var(--shadowDefault);
+}
+
+.container-video-history > iframe{
+    border-radius: 15px;
+}
+
+.container-history{
+    background-color: var(--mainColor);
+    font-family: var(--font-default);
+    font-weight: bold;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 800px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: var(--shadowDefault);
+}
+
+.container-history .paragraph-description{
+    color: var(--accentColor);
+    margin: 10px 0;
+}
+
+.paragraph-description > a{
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.container-history > q{
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+    gap: 10px;
+}

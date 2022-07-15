@@ -27,5 +27,6 @@ nav, ul ,ol, li , a{
     --mainColor: #D71525;
     --subColor: #81101B;
     --complementaryColor: #FFF48E;
-    --shadowDefault: 0 0 20px rgba(0,0,0,0.5);
+    --complementaryColorTwo: #F3C846;
+    --shadowDefault: 0 0 20px rgba(0,0,0,0.8);
 }

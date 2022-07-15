@@ -12,6 +12,7 @@
     width: 100%;
     background-image: linear-gradient(to top , var(--mainColor), var(--subColor));
     box-shadow: var(--shadowDefault);
+    z-index: 1000;
 }
 
 .container-logo{
@@ -72,6 +73,10 @@
     opacity: 1;
 }
 
+.item-submenu:hover .submenu-item{
+    visibility: visible;
+}
+
 .submenu-dropdown{
     visibility: hidden;
     background-color: var(--accentColor);
@@ -87,17 +92,17 @@
     position: absolute;
     top: 55px;
     left: -10px;
-    width: 200px;
+    width: 250px;
     opacity: 0;
-    transition: 0.5s;
-    z-index: 1000;
+    z-index: 100;
+    transition: all 0.3s;
 }
 
 .submenu-item{
-    transition: 0.8s;
+    visibility: hidden;
+    transition: all 0.3s;
     cursor: pointer;
     width: 100%;
-    transition: 0.8s;
     border-bottom: 2px solid var(--mainColor);
     padding: 5px;
 }
@@ -127,7 +132,81 @@
     transform: scale(1.2);
 }
 
-
 /*Estilização do Header*/
 
+.header{
+    height: calc(100vh - 100px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.header > img{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    position: absolute;
+    z-index: -10;
+    transition: 0.8s;
+}
+
+.header > img.selected{
+    opacity: 1;
+}
+
+.header > h1{
+    font-family: var(--font-titles);
+    font-size: 9em;
+    color: var(--accentColor);
+    text-shadow: var(--shadowDefault);
+    animation: animate 2s infinite;
+}
+
+.container-redes-sociais{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 30px;
+    gap: 25px;
+}
+
+.container-icon{
+    height: 70px;
+    width: 70px;
+    background-color: var(--complementaryColor);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--mainColor);
+    box-shadow: var(--shadowDefault);
+    opacity: 50%;
+    transition: 0.8s;
+}
+
+.container-icon img{
+    width: 70%;
+}
+
+.container-icon:hover{
+    transform: scale(1.2);
+    opacity: 100%;
+}
+
+
+@keyframes animate {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+
+}
