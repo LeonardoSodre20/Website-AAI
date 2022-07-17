@@ -1,0 +1,68 @@
+@import url('../css/reset.css');
+
+.container-inscricoes-main{
+    border-top: 3px solid #fff;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-inscricoes-main > h1{
+    margin-top: 20px;
+    font-family: var(--font-titles);
+    font-size: 7em;
+    color: var(--mainColor);
+}
+
+.container-inscricoes-alunos{
+    background-image: linear-gradient(to top , var(--mainColor), var(--subColor));
+    width: 80%;
+    height: 500px;
+    border-radius: 15px;
+    box-shadow: var(--shadowDefault);
+}
+
+.container-icons-inscricoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 90%;
+    padding: 15px;
+}
+
+.container-icon-inscricao{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: var(--accentColor);
+    border: 3px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.container-icon-inscricao > img{
+    width: 70%;
+}
+
+.container-photo-inscricao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    background-color: var(--accentColor);
+    border: 3px solid #fff;
+    padding: 5px;
+}
+
+.container-photo-inscricao > img{
+    width: 90%;
+}

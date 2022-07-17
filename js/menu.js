@@ -1,3 +1,4 @@
+const containerLogo = document.querySelector(".container-logo")
 const imgsTransition = document.querySelectorAll('[data-img="header-imgs"]')
 let indexImage = 0
 let maxImages = imgsTransition.length
@@ -21,6 +22,14 @@ function startTransition () {
         transitionImages()
     }, 3000)
 }
+
+function loadToPage () {
+    location.reload()
+}
+
+containerLogo.addEventListener('click' , () => {
+    loadToPage()
+})
 
 window.addEventListener('load', startTransition)
 

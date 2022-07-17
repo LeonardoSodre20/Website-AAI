@@ -4,7 +4,7 @@
 /*Estilização da Barra de Navegação*/
 
 .nav-bar{
-    /* position: fixed; */
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -43,6 +43,7 @@
     font-size: 1.5em;
     cursor: pointer;
     transition: 0.8s;
+    text-shadow: var(--shadowDefault);
 }
 
 .container-icon-and-link{
@@ -117,6 +118,8 @@
     font-family: var(--font-titles);
     font-size: 1.2em;
     border-radius: 15px;
+    width: 100%;
+    text-shadow: var(--shadowDefault);
 }
 
 .item-menu{
@@ -135,11 +138,12 @@
 /*Estilização do Header*/
 
 .header{
-    height: calc(100vh - 100px);
+    height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .header > img{
@@ -157,13 +161,14 @@
     opacity: 1;
 }
 
-.header > h1{
+/* .header > h1{
     font-family: var(--font-titles);
     font-size: 9em;
     color: var(--accentColor);
     text-shadow: var(--shadowDefault);
+    opacity: 50%;
     animation: animate 2s infinite;
-}
+} */
 
 .container-redes-sociais{
     display: flex;
@@ -203,7 +208,7 @@
         transform: scale(1);
     }
     50%{
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
     100%{
         transform: scale(1);
