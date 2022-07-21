@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/donationsContainer.css">
     <link rel="stylesheet" href="css/registrationContainer.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
 
@@ -17,7 +18,7 @@
             <img src="imgs/Logotipo-AAI.svg" alt="logotipo" class="logo">
         </div>
 
-        <ul class="menu-list">
+        <ul class="menu-list" data-menu-list="menu-list">
             <li class="item-menu">
                 <a href="#" class="link-item">Home</a>
             </li>
@@ -48,14 +49,6 @@
                 
                 <ul class="submenu-dropdown">
                     <li class="submenu-item">
-                        <a href="#" class="link-item-submenu">Voluntários</a>
-                    </li>
-
-                    <li class="submenu-item">
-                        <a href="#" class="link-item-submenu">Alunos</a>
-                    </li>
-
-                    <li class="submenu-item">
                         <a href="#" class="link-item-submenu">Empresas</a>
                     </li>
 
@@ -64,26 +57,6 @@
                     </li>
                 </ul>
             </li>
-
-            <!-- <li class="item-submenu">
-                <div class="container-icon-and-link">
-                    <span class="link-item">Imprensa</span>
-                    <img src="icons/icons8-ordem-descendente-30 (1).png" alt="indicador-link">
-                </div>
-
-                
-                <ul class="submenu-dropdown">
-                    <li class="submenu-item">
-                        <a href="#" class="link-item-submenu">Informações</a>
-                    </li>
-                    <li class="submenu-item">
-                        <a href="#" class="link-item-submenu">Reportagens</a>
-                    </li>
-                    <li class="submenu-item">
-                        <a href="#" class="link-item-submenu">Galeria de Fotos</a>
-                    </li>
-                </ul>
-            </li> -->
 
             <li class="item-submenu">
                 <div class="container-icon-and-link">
@@ -167,6 +140,10 @@
                 <a href="http://aainclusivo.blogspot.com/" target="_blank" class="link-item">Blog</a>
             </li>
         </ul>
+
+        <div class="container-menu-mobile">
+            <img src="icons/icons8-menu-arredondado-80.png" alt="menu-mobile">
+        </div>
     </nav>
 
     <header class="header">
@@ -199,111 +176,6 @@
     </header>
 
     <main>
-        <section class="container-doacao-main">
-
-            <h1>Doações</h1>
-
-            <section class="container-doacao-informations">
-                <div class="container-logo-informations">
-                    <img src="imgs/Logotipo-AAI.svg" alt="logotipo">
-                </div>
-
-                <p>"A Associação do Amor Inclusivo é uma instituição <strong>sem fins lucrativos</strong> que atende crianças , jovens e adultos com deficiência auditiva ou múltiplas ".</p>
-            </section>
-
-            <section class="container-formas-doacao">
-                <!-- <h2>Formas de Doação</h2> -->
-
-                <section class="container-forma-doacao-agencia">
-                    <section class="container-icon-and-title">
-                        <div>
-                            <img src="imgs/Logotipo-AAI.svg" alt="logotipo">
-                        </div>
-                        <h3>Associação do Amor Inclusivo</h3>
-                    </section>
-
-                    <p>Utilize nossa agência do bradesco para doar!</p>
-
-                    <ul class="list-informations">
-                        <li>Agência : <strong>152</strong></li>
-                        <li>Conta : <strong>373719-5</strong></li>
-                        <li>Cnpj : <strong>29.760.257/0001-23</strong></li>
-                    </ul>
-
-                    <div class="container-citacao">
-                        <p>"Fica sempre um pouco de perfume nas mãos que oferecem rosas, nas mãos que sabem ser generosas."</p>
-                    </div>
-                </section>
-
-                <section class="container-forma-doacao-qrcode">
-                    <section class="container-forma-doacao-pix">
-                        <section class="container-icon-and-title">
-                            <div>
-                                <img src="imgs/Logotipo-AAI.svg" alt="logotipo">
-                            </div>
-                            
-                            <h3>Associação do Amor Inclusivo</h3>
-                        </section>
-
-                        <p>Utilize nosso QR Code para Doar pelo pix!</p>
-
-                        <div class="container-img-qr-code">
-                            <img src="imgs/qrcode-pix 1.svg" alt="qrcode-pix">
-                        </div>
-
-                        <p>Chave do Pix : Cnpj - 29.760.257/0001-23</p>
-
-                        <button>Copiar Chave</button>
-                    </section>
-                </section>
-        </section>
-
-        <section class="container-inscricoes-main">
-            <h1>Inscrições</h1>
-
-            <section class="container-inscricoes-alunos">
-                <section class="container-icons-inscricoes">
-                    <div class="container-icon-inscricao">
-                        <img src="icons/icons8-inscrição-100 2.png" alt="icon-inscricao">
-                    </div>
-
-                    <div class="container-photo-inscricao">
-                        <img src="imgs/computador-mao-notebook 2.svg" alt="photo-inscricao">
-                    </div>
-                </section>
-
-                <section class="container-informations-inscricoes">
-                    <h2>Inscrições de Alunos</h2>
-    
-                    <div class="container-orientations">
-                        <p>Para realizar inscrições de alunos com deficiência auditiva, visual ou outra , basta somente trazer os documentos de identificação e laudo médico da pessoa.</p>
-                        <p>OBS: O inscrito deverá estar acompanhado de alguma pessoa responsável <strong>(Pai , Mãe , Esposa...).</strong></p>
-    
-                        <p>Em outros momentos , também poderá ser feito as inscrições online . <strong>Clique no link abaixo!</strong></p>
-                    </div>
-    
-                    <a href="#">Inscrição Online</a>
-    
-                    <h3>Dúvidas:</h3>
-    
-                    <section class="container-contacts">
-                        <div class="container-icon-contact">
-                            <div>
-                                <img src="icons/icons8-gmail-100 1.png" alt="icon-gmail">
-                            </div>
-                            <span>aainclusivo@gmail.com</span>
-                        </div>
-
-                        <div class="container-icon-contact">
-                            <div>
-                                <img src="icons/icons8-whatsapp-100 1.png" alt="icon-whatsapp">
-                            </div>
-                            <span>(15) 99774-1042</span>
-                        </div>
-                    </section>
-                </section>
-            </section>
-        </section>
     </main>
 
 

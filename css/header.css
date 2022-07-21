@@ -15,6 +15,17 @@
     z-index: 1000;
 }
 
+.container-menu-mobile{
+    display: none;
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+}
+
+.container-menu-mobile > img{
+    width: 70%;
+}
+
 .container-logo{
     height: 80px;
     width: 80px;
@@ -54,19 +65,21 @@
     cursor: pointer;
     transition: 0.8s;
     border: 3px solid transparent;
-    padding: 5px;
+    padding: 10px;
     border-radius: 15px;
-}
-
-.container-icon-and-link:hover{
-    border: 3px solid var(--accentColor);
-    transform: scale(1.2);
 }
 
 .item-submenu{
     position: relative;
     display: flex;
     align-items: center;
+    transition: 0.5s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.item-submenu:hover{
+    background-color: var(--accentColor);
 }
 
 .item-submenu:hover .submenu-dropdown{
@@ -91,8 +104,7 @@
     border: 3px solid var(--mainColor);
     box-shadow: var(--shadowDefault);
     position: absolute;
-    top: 55px;
-    left: -10px;
+    top: 65px;
     width: 250px;
     opacity: 0;
     z-index: 100;
@@ -109,7 +121,6 @@
 }
 
 .submenu-item:hover{
-    transform: scale(1.1);
     background-color: var(--complementaryColor);
 }
 
@@ -119,20 +130,18 @@
     font-size: 1.2em;
     border-radius: 15px;
     width: 100%;
-    text-shadow: var(--shadowDefault);
 }
 
 .item-menu{
     transition: 0.8s;
     cursor: pointer;
     border: 3px solid transparent;
-    padding: 5px;
-    border-radius: 15px;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .item-menu:hover{
-    border: 3px solid var(--accentColor);
-    transform: scale(1.2);
+    background-color: var(--accentColor);
 }
 
 /*Estilização do Header*/
@@ -160,15 +169,6 @@
 .header > img.selected{
     opacity: 1;
 }
-
-/* .header > h1{
-    font-family: var(--font-titles);
-    font-size: 9em;
-    color: var(--accentColor);
-    text-shadow: var(--shadowDefault);
-    opacity: 50%;
-    animation: animate 2s infinite;
-} */
 
 .container-redes-sociais{
     display: flex;
@@ -202,16 +202,3 @@
     opacity: 100%;
 }
 
-
-@keyframes animate {
-    0%{
-        transform: scale(1);
-    }
-    50%{
-        transform: scale(1.1);
-    }
-    100%{
-        transform: scale(1);
-    }
-
-}
