@@ -24,6 +24,7 @@ nav, ul ,ol, li , a{
     --font-titles: 'Bebas Neue', cursive;
     --font-default: 'Poppins', sans-serif;
     --accentColor: #FFCC32;
+    --hoverColor: #ffcc325d;
     --mainColor: #D71525;
     --subColor: #81101B;
     --complementaryColor: #FFF48E;

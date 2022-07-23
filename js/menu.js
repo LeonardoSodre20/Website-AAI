@@ -1,5 +1,6 @@
-const buttonMenuMobile = document.querySelector(".container-menu-mobile")
-const containerLogo = document.querySelector(".container-logo")
+const buttonMenuMobile = document.querySelector('.menu-mobile')
+console.log(buttonMenuMobile)
+const containerLogo = document.querySelector('.container-logo')
 const imgsTransition = document.querySelectorAll('[data-img="header-imgs"]')
 let indexImage = 0
 let maxImages = imgsTransition.length
@@ -41,7 +42,6 @@ window.addEventListener('load', startTransition)
 
 buttonMenuMobile.addEventListener('click', () => {
     const menuList = document.querySelector('[data-menu-list="menu-list"]')
-
     menuList.classList.toggle('menu-list-mobile')
 })
 
