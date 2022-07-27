@@ -144,7 +144,6 @@ label{
     box-shadow: var(--shadowDefault);
     position: absolute;
     top: 65px;
-    bottom: 65;
     width: 250px;
     opacity: 0;
     z-index: 100;

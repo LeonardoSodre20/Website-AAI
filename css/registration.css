@@ -1,0 +1,291 @@
+@import url('../css/reset.css');
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/*Estilização da Sessão de Inscrição de Alunos*/
+
+.container-inscricoes-alunos-principal{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 2px solid #fff;
+}
+
+.container-inscricoes-alunos-principal > h1{
+    font-family: var(--font-titles);
+    font-size: 7em;
+    color: var(--mainColor);
+    margin-top: 50px;
+}
+
+.container-inscricoes-informacoes{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: linear-gradient(to top , var(--mainColor), var(--subColor));
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+    box-shadow: var(--shadowDefault);
+    margin-bottom: 50px;
+}
+
+.container-inscricoes-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+    height: 100%;
+    width: 30%;
+}
+
+.container-inscricoes-icon > .container-icon-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50%;
+    height: 250px;
+    min-width: 45%;
+    width: 250px;
+    background-color: var(--accentColor);
+    border-radius: 50%;
+    border: 7px solid #fff;
+    box-shadow: var(--shadowDefault);
+}
+
+.container-inscricoes-icon > .container-icon-img > img{
+    width: 90%;
+    padding: 15px;
+}
+
+.container-inscricoes-icon > .container-inscricao-photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    min-height: 50%;
+    min-width: 45%;
+    background-color: var(--accentColor);
+    border-radius: 20px;
+    border: 7px solid #fff;
+    box-shadow: var(--shadowDefault);
+}
+
+.container-inscricoes-icon > .container-inscricao-photo > img{
+    width: 100%;
+    padding: 5px;
+}
+
+.container-inscricoes-conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    height: 90%;
+    width: 60%;
+    padding: 10px;
+}
+
+.container-inscricoes-conteudo > h2{
+    color: var(--accentColor);
+    font-size: 3em;
+    font-family: var(--font-titles);
+}
+
+.container-paragrafos{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container-paragrafos > p{
+    color: #fff;
+    font-size: 1.5em;
+    font-family: var(--font-default);
+}
+
+.container-paragrafos > p > strong{
+    color: var(--accentColor);
+}
+
+.link-inscricao{
+    color: var(--mainColor);
+    font-size: 2em;
+    font-family: var(--font-titles);
+    background-color: var(--accentColor);
+    border: 3px solid #fff;
+    border-radius: 20px;
+    padding: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: var(--shadowDefault);
+}
+
+.link-inscricao:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.container-duvidas{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+}
+
+.duvidas-titulo{
+    color: var(--accentColor);
+    font-size: 1.5em;
+    font-family: var(--font-titles);
+}
+
+.container-gmail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container-icon-gmail{
+    width: 70px;
+    height: 70px;
+    background-color: var(--accentColor);
+    border: 3px solid #fff;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.container-icon-gmail > img{
+    width: 100%;
+}
+
+.container-gmail > span{
+    font-size: 1.2em;
+    color: #fff;
+    font-family: var(--font-default);
+    font-weight: bold;
+    font-style: italic;
+}
+
+.container-whatsapp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container-icon-whatsapp{
+    width: 70px;
+    height: 70px;
+    background-color: var(--accentColor);
+    border: 3px solid #fff;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.container-whatsapp > span{
+    font-size: 1.2em;
+    color: #fff;
+    font-family: var(--font-default);
+    font-weight: bold;
+}
+
+.container-icon-whatsapp > img{
+    width: 100%;
+}
+
+/*Estilização da Sessão de Inscrição de Voluntários*/
+
+.container-inscricoes-voluntarios-principal{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 2px solid #fff;
+}
+
+.container-inscricoes-voluntarios-principal > h1{
+    font-family: var(--font-titles);
+    font-size: 7em;
+    color: var(--mainColor);
+    margin-top: 50px;
+}
+
+.container-inscricoes-voluntarios{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: linear-gradient(to top , var(--mainColor), var(--subColor));
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+    box-shadow: var(--shadowDefault);
+    margin-bottom: 50px;
+}
+
+.container-fotos-voluntarios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+    height: 100%;
+    width: 30%;
+}
+
+.container-foto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60%;
+    background-color: var(--accentColor);
+    padding: 5px;
+    border-radius: 15px;
+    border: 7px solid #fff;
+}
+
+.container-foto > img{
+    width: 90%;
+    border-radius: 15px;
+}
+
+.container-informacoes-voluntarios{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    height: 90%;
+    width: 60%;
+    padding: 10px;
+}
+
+.container-informacoes-voluntarios > h2{
+    color: var(--accentColor);
+    font-size: 3em;
+    font-family: var(--font-titles);
+}
+
+
